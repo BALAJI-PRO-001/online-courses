@@ -152,7 +152,7 @@ In computer memory
 
 +-------+ --------> memory block
 |       |
-| 01010-|---------> data
+| 01010-----------> data
 |       |
 +-------+
  #ff5rd ----------> memory address (Always Unique Memory Address)
