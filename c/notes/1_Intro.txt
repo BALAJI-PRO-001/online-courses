@@ -18,7 +18,7 @@ Usage of C Language
 
 
 
-Compiler
+Compiler=
 ========
 * A compiler is a program that translates code written in a high-level
   programming language (like C, C++, or Java) into machine code (binary code) that a computer’s processor can understand and execute.
@@ -143,7 +143,7 @@ Memory allocation of variables
 ==============================
 int a = 10;
 float b = 20.00;
-char = '@';
+char ch = '@';
 char name[5] = "a#9s";
 
 
@@ -168,7 +168,7 @@ int a = 10;           float b = 20.00;           char ch = '@';
  #fff2 -----+            #f@s4 -----+               #@s6 -----+
 
 
-char name[5] = "c#1*";
+char name[4] = "c#1*";
 
           +------+-----+-----+-----+------+
           |      |     |     |     |      |
@@ -229,6 +229,13 @@ Syntax: printf("<Identifiers>", <variable>);
 Syntax: printf("<Any string with identifiers>", <variable>);
 Syntax: printf("<Any string with identifiers>", <variable1>, <variable2>, ....);
 
+
+Identifiers
+===========
+int     => %d 
+float   => %f
+char    => %c 
+string  => %s
 
 
 Sample Program 
