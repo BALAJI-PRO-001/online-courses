@@ -219,9 +219,20 @@ key words
 auto, break, for, while, etc ....
 
 
+
+Output statement in C
+=====================
+This statement print output in console window.
+
+Syntax: printf("<Any string>");
+Syntax: printf("<Identifiers>", <variable>);
+Syntax: printf("<Any string with identifiers>", <variable>);
+Syntax: printf("<Any string with identifiers>", <variable1>, <variable2>, ....);
+
+
+
 Sample Program 
 ==============
-
 int main() {
   pf("HI");
   return 0;
