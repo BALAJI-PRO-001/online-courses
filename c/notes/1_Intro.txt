@@ -1,0 +1,228 @@
+Introduction to C Language
+==========================
+* Developed by: Dennis Ritchie in 1972 at Bell Labs.
+* Features: Simple, portable, flexible, and efficient. 
+  Often used for system programming (like operating systems) and embedded systems.
+* Characteristics: Procedural language, structured programming, 
+  low-level access to memory, and minimal runtime support.
+
+
+
+Usage of C Language
+===================
+1) Operating Systems
+2) Embedded Systems
+3) Game Development
+4) System Programming
+5) Scientific and Engineering Applications
+
+
+
+Compiler
+========
+* A compiler is a program that translates code written in a high-level
+  programming language (like C, C++, or Java) into machine code (binary code) that a computer’s processor can understand and execute.
+
+* In simpler terms, it converts human-readable code into machine-readable instructions, 
+  allowing the program to run on a computer.
+
++------------------+          +-------------+          +--------------+
+|                  |          |             |          |              |
+|   Source Code    | =======> |   Compiler  | =======> | Machine Code | 
+| (Human Readable) |          |             |          | (0101010101) |
++------------------+          +-------------+          +--------------+
+                                                               |
+         +-----------------------------------------------------+
+         |
++------------------+          +-------------+          
+|                  |          |             |          
+|    Executed By   | =======> |   Output In | 
+|    Computer      |          |   Console   |          
++------------------+          +-------------+     
+
+
+
+Memory size units
+=================
+1 Bit (bit)      = (0 or 1)
+1 Byte (B)       = 8 bits
+1 Kilobyte (KB)  = 1024 Bytes
+1 Megabyte (MB)  = 1024 Kilobytes
+1 Gigabyte (GB)  = 1024 Megabytes
+1 Terabyte (TB)  = 1024 Gigabytes
+1 Petabyte (PB)  = 1024 Terabytes
+1 Exabyte (EB)   = 1024 Petabytes
+1 Zettabyte (ZB) = 1024 Exabytes
+1 Yottabyte (YB) = 1024 Zettabytes
+
+
+
+Data Types
+==========
+  A data type is a classification that specifies what kind of data a variable can hold in a programming language. 
+In other words, it defines the type of value that a variable can store, such as integers, characters, or floating-point numbers. 
+Data types also determine the amount of memory allocated for storing a value and the kinds of operations that can be performed on that data.
+
++------------+------------+-------------------+
+| Data Type  | Storage    | Range            |
+|            | Capacity   |                  |
++------------+------------+-------------------+
+| int        | 4 bytes    | -2,147,483,648   |
+|            |            | to 2,147,483,647 |
++------------+------------+-------------------+
+| float      | 4 bytes    | ~ ±3.4 x 10^38   |
+|            |            | (6-7 digits)     |
++------------+------------+-------------------+
+| char       | 1 byte     | -128 to 127      |
+|            |            | (signed)         |
+|            |            | 0 to 255         |
+|            |            | (unsigned)       |
++------------+------------+-------------------+
+| double     | 8 bytes    | ~ ±1.7 x 10^308  |
+|            |            | (15-16 digits)   |
++------------+------------+-------------------+
+
+int:
+    Description: Used to store whole numbers (integers).
+    Examples: 10, 0, -100, 2500.
+
+float:
+    Description: Used to store decimal numbers (floating-point).
+    Examples: 10.0, 100.234, -0.5.
+
+char:
+    Description: Used to store a single character.
+    Examples: 'c', '1', '@'.
+
+double:
+    Description: Used to store double-precision floating-point numbers.
+    Examples: 10.0, 100.234567, -0.123456789.
+
+
+
+Variable 
+========
+A variable is a named storage location in a program that holds data.
+
+Example in maths
+================
+a = 10
+b = 20
+c = a + b  => c: 30
+
+Example in program
+==================
+int a = 10;
+int b = 20;
+int c = a + b;  => c: 30
+
+Types of variables
+==================
+int a = 10;
+float b = 10.00;
+char ch = 'a';                      Note: Character must me enclosed by ''
+char name[5] =  "C@2*" ;            Note: String must me enclosed by    ""
+               |------|
+                 |
+                 +--------> string
+
+    +-----------> variable name
+    |
+int a = 10;
+|       |
+|       +---------> data
+|
+dataType
+
++-------------+
+| int a = 10; | ------> statement
++-------------+
+
+
+Memory allocation of variables
+==============================
+int a = 10;
+float b = 20.00;
+char = '@';
+char name[5] = "a#9s";
+
+
+In computer memory
+==================
+
++-------+ --------> memory block
+|       |
+| 01010-|---------> data
+|       |
++-------+
+ #ff5rd ----------> memory address (Always Unique Memory Address)
+
+
+int a = 10;           float b = 20.00;           char ch = '@';
+
++-------+             +---------+                +---------+
+|       |   a         |         |   b            |         |   ch
+|  10   |   |         |   20.0  |   |            |    @    |   |
+|       |   |         |         |   |            |         |   |
++-------+   |         +---------+   |            +---------+   |
+ #fff2 -----+            #f@s4 -----+               #@s6 -----+
+
+
+char name[5] = "c#1*";
+
+          +------+-----+-----+-----+------+
+          |      |     |     |     |      |
+ name     |  c   |  #  |  1  |  *  |  \0  |      Note: \0 -> Null Character
+  |       |      |     |     |     |      |
+  |       +------+-----+-----+-----+------+
+  +---------#f2    #f4   #f6   #f8   #f10
+              
+
+
+Main Function
+=============
+Main function is stating point of every program.
+
+int main() {
+
+  // your code .....
+
+  return 0;
+}
+
+
+
+Link Sections
+=============
+The link section is responsible for combining multiple object files.
+
++-----------+           +------------------+
+|  code ... |           | +--------------+ |             
+|  ....     |           | |   stdio.h    | |             
+|  ....     |           | +--------------+ |             
+|  ....     |           |        |         |             
+|  ....     | <------------------+         |      
+|           |           |                  |             
+|           |           |                  |             
++-----------+           +------------------+
+  myFile.c                     cLib
+
+Examples
+========
+#include <stdio.h>
+#include <conio.h>
+
+
+
+key words
+=========
+auto, break, for, while, etc ....
+
+
+Sample Program 
+==============
+
+int main() {
+  pf("HI");
+  return 0;
+}
