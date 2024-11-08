@@ -17,11 +17,20 @@ int main() {
             }
    */
 
-   //        6     6 <= 5   M:6
-   for (int i = 1; i <= 5; i++) {
-      pf("HI");
-   }
-   //output: HIHIHIHIHI
+  //  for (int i = 1; i <= 5; i++) {
+  //     pf("HI");
+  //  }
+
+  // 1 + 2 + 3 + N
+  int num, sum = 0;
+  pf("Enter number: ");
+  sf("%d", &num);
+                   
+  for (int i = 1; i <= num; i++) {
+    sum = sum + i; 
+  }
   
+  pf("Sum: %d", sum);
+
   return 0;
 }
