@@ -1,0 +1,119 @@
+Procedure-Oriented Programming (POP) and Object-Oriented Programming (OOP)
+===========================================================================
+
+Procedure-Oriented Programming (POP)
+====================================
+
+* Focus: Functions and procedures are the central focus.
+* Data Handling: Data is usually global and shared among functions.
+* Reusability: Limited; functions must be manually reused.
+* Abstraction: No abstraction; implementation details are exposed.
+* Modularity: Programs are divided into functions or procedures.
+* Scalability: Difficult to scale for large systems.
+* Maintenance: Harder to maintain due to interdependent functions.
+* Examples of Usage: Embedded systems, simple algorithms.
+* Examples of Languages: C, Pascal, FORTRAN.
+
+
+
+Object-Oriented Programming (OOP)
+=================================
+
+* Focus: Objects (data and behavior) are the central focus.
+* Data Handling: Data is encapsulated within objects and protected by access modifiers.
+* Reusability: High; achieved through inheritance and polymorphism.
+* Abstraction: Supported through classes and interfaces.
+* Modularity: Programs are divided into objects and classes.
+* Scalability: Easy to scale for large, complex systems.
+* Maintenance: Easier to maintain due to encapsulation and modularity.
+* Examples of Usage: GUI applications, large-scale systems.
+* Examples of Languages: Java, Python, C++, Ruby.
+
+
+
+Characteristics of Object-Oriented Programming (OOP)
+====================================================
+
+  Encapsulation:
+      Grouping data and functions together in a class, and hiding unnecessary details.
+      Benefit: Protects data and keeps things organized.
+
+  Abstraction:
+      Hiding complex details and showing only the important features.
+      Benefit: Makes code easier to understand.
+
+  Inheritance:
+      A class can inherit properties and behaviors from another class.
+      Benefit: Reuses code and creates relationships between classes.
+
+  Polymorphism:
+      Different objects can respond to the same action in different ways.
+      Benefit: Makes the code more flexible and reusable.
+
+  Class and Objects:
+      A class is a blueprint for creating objects (instances).
+      Benefit: Represents real-world entities and their behavior.
+
+  Message Passing:
+      Objects communicate with each other by sending messages (calling methods).
+      Benefit: Promotes interaction and reduces code complexity.
+
+  Modularity:
+      Dividing the program into smaller, self-contained pieces (classes/objects).
+      Benefit: Easier to maintain and update.
+
+  Dynamic Binding:
+      Method calls are resolved during runtime, not beforehand.
+      Benefit: Increases flexibility in handling different actions.
+
+  Reusability:
+      Code can be reused in different parts of the program.
+      Benefit: Saves time and reduces duplication.
+
+  Composition:
+  A class can include other objects inside it.
+  Benefit: Builds complex objects using simpler ones.
+
+
+Introduction to C++
+===================
+  C++ is a powerful, versatile, and widely-used programming language that supports multiple paradigms, 
+  including procedural, object-oriented, and generic programming. 
+  It was developed by Bjarne Stroustrup in 1983 as 
+  an extension of the C language.
+
+Key Features of C++
+===================
+
+Object-Oriented Programming (OOP):
+  Includes features like classes, objects, inheritance, polymorphism, and encapsulation.
+  Allows modeling of real-world problems.
+
+Platform Independence:
+  C++ code can run on different platforms with minimal changes.
+
+Compiled Language:
+  Requires a compiler (e.g., GCC, Clang, MSVC) to convert source code into machine code.
+
+Low-Level Manipulation:
+  Provides access to low-level memory operations using pointers.
+
+Rich Library Support:
+  Includes a standard library (STL: Standard Template Library) for data structures, algorithms, and more.
+
+Performance:
+  Highly efficient and fast due to direct interaction with hardware and system resources.
+
+
+Example
+=======
+
+main.cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello, World!";  
+  return 0;  
+}
